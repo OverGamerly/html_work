@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .test1 {
+            width: 500px;
+            height: 100px;
+            background-color: blue;
+            border: 15px solid gold;
+            padding: 10px;
+
+            margin: 10px;
+        }
+        .test2 {
+            width: 500px;
+            height: 100px;
+            background-color: red;
+            border: 15px solid gold;
+        }
+        .list1 {
+            background-color: gold;
+            list-style-type: lower-latin;
+            list-style-position: inside;
+        }
+        .list1>li {
+            background-color: red;
+        }
+        .list2 {
+            list-style-type:georgian;
+
+        }
+        .list4 {
+            list-style-type: none;
+        }
+        .list4>li::before {
+            content: '\272F';
+            color: tomato;
+        }
+        .inner {
+            background-color: gold;
+            color: green;
+        }
+        .inner1 {
+            list-style-image: url(https://test-dev-skills.ru/pages/images/building.png);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="test1">Заголовок</h1>
+    <h1 class="test2">Заголовок</h1>
+
+    <!-- Списки -->
+    <h2>Ремонт машины</h2>
+    <ol class="list1">
+        <li>Найти неисправность</li>
+        <li>Решить проблему</li>
+        <li>Испытание</li>
+    </ol>
+    <!-- Неупорядоченный список-->
+    <ul class="list2">
+        <li>Краска</li>
+        <li>Хром</li>
+        <li>Лак</li>
+    </ul>
+    <!-- Список определеий-->
+    <dl class="list3">
+        <dd>Рынок</dd>
+        <dd>Бвзар</dd>
+        <dd>Ярмарка</dd>
+        <dd>ываа</dd>
+    </dl>
+
+    <!-- Влложенные списки-->
+    <ul class="list4">
+        <li>Седан
+            <ul class="inner inner1">
+                <li>Дорогой</li>
+                <li>Средний</li>
+                <li>Бюджет</li>
+            </ul>
+        </li>
+        <li>Универсал
+            <ul class="inner inner2">
+                <li>Дорогой</li>
+                <li>Средний</li>
+                <li>Бюджет</li>
+            </ul>
+        </li>
+        <li>Хэтчбек
+            <ul class="inner inner3">
+                <li>Дорогой</li>
+                <li>Средний</li>
+                <li>Бюджет</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

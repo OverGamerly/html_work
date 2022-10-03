@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+           margin: 0 auto;
+           font-family: Georgia, 'Times New Roman', Times, serif; 
+        }
+        .top-block {
+            height: 323px;
+            background-color: #ff6825;
+            text-align: center;
+            padding: 20px;
+        }
+        .top-block h1 {
+            font-size: 48px;
+        }
+        .top-block h2 {
+            font-size: 40px;
+            color: white;
+            margin: 0px;
+        }
+        .top-block p {
+            margin: 15px;
+        }
+        .content {
+            height: 423px;
+        }
+        .block-left {
+            width: 49%;
+            display: inline-block;
+            padding: 20px;
+            vertical-align: top;
+        }
+        .image {
+            width: 10%;
+            background-color: red;
+            text-align: center;
+            padding: 13px;
+            border-radius: 20px;
+            float: right;
+        }
+        .image p {
+            margin: 0;
+            font-size: 30px;
+            color: white;
+            line-height: 30px;
+        }
+        .block-right {
+            width: 49%;
+            display: inline-block;
+            padding: 20px;
+            vertical-align: top;
+        }
+        .block-bottom {
+            text-align: center;
+        }
+        .block-bottom>div {
+            margin-top: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+            float: left;
+            border-top-right-radius: 20px;
+            border:5px solid gray;
+            width: 15%;
+        }
+        .block-bottom>div>p {
+            font-size: 20px;
+            color: white;
+        }
+        .block-web {
+            background-color: #ff6825;
+        }
+        .block-java {
+            background-color: #9a0000;
+        }
+        .block-front {
+            background-color:#183c8a;
+        }
+        .block-modern {
+            background-color:#59109e;
+        }
+        .block-css {
+            background-color:#18b630;
+        }
+        h3 {
+            margin: 0px;
+            text-decoration: underline;
+            text-decoration-style: dashed;
+        }
+        .block-bottom>div>div {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 80%;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top-block">
+        <h1>Sample Page</h1>
+        <h2>with CSS Box model</h2>
+        <p>for students</p>
+    </div>
+    <div class="content">
+        <div class="block-left">
+            <h3>About Us</h3>
+            <div class="image">
+                <p>&#11208;</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident odit, consequuntur dolor omnis repellat, aliquam illo dolorum obcaecati maiores hic saepe vero quos ea sunt nulla quia officia dolorem repudiandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis distinctio sunt magni est perspiciatis dolores modi quaerat illum, vel quasi voluptates consequatur ipsam ad exercitationem a blanditiis, voluptate assumenda.</p>
+        </div>
+        <div class="block-right">
+            <h3>Our mission</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quam qui facilis ratione sequi magnam! Dolore dolorem rem, voluptatibus enim perspiciatis at, omnis fugit voluptates, itaque autem modi quaerat perferendis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse sequi nam nostrum vitae facilis sapiente libero beatae suscipit autem ad quaerat minima architecto quos officiis itaque iste, vero qui.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed tempore, doloremque architecto asperiores ratione perferendis. Excepturi dolore id hic nostrum, earum beatae recusandae fugiat rerum vitae, ipsum, explicabo eius voluptas?</p>
+        </div>
+        <div class="block-bottom">
+            <h3>Popular Courses</h3>
+            <div class="block-web">
+                <div class="sale">
+                    <p>TOP SALES</p>
+                </div>
+                <p>The Web Developer</p>
+            </div>
+            <div class="block-java">
+                <div class="sale">
+                    <p>NEW!</p>
+                </div>
+                <p>JavaScript Developer</p>
+            </div>
+            <div class="block-front">
+                <div class="sale">
+                    <p>MOST POPULAR</p>
+                </div>
+                <p>FrontEnd Developer</p>
+            </div>
+            <div class="block-modern">
+                <div class="sale">
+                    <p>SUPER SALE!</p>
+                </div>
+                <p>Modern Web Design</p>
+            </div>
+            <div class="block-css">
+                <div class="sale">
+                    <p>MOST POPULAR</p>
+                </div>
+                <p>CSS Complete Course</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

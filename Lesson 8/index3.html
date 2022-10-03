@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            margin: 0;
+        }
+        .top {
+            width: 100%;
+            height: 600px;
+        }
+        .top>.left {
+            display: inline-block;
+            width: 25%;
+            height: 100%;
+        }
+        .top>.left>ol {
+            width: 45%;
+            height: 20%;
+            margin-top: 20%;
+            margin-bottom: 100px;
+            font-size: 30px;
+            list-style: none;
+            width: 100%;
+            text-align: right;
+        }
+        .picture {
+            width: 95%;
+            height: 50%;
+            margin-left: 25px;
+        }
+        .picture>img {
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .picture>.text {
+            border: 7px double black;
+            width: 300px;
+            height: 30px;
+            padding-bottom: 5px;
+            text-align: center;
+            position: relative;
+            left: 70px;
+            bottom: 315px;
+            background-color: #fff;
+        }
+        .picture>.text>h3 {
+            margin: 0;
+            font-size: 15px;
+        }
+        .top>.centre {
+            vertical-align: top;
+            display: inline-block;
+            padding-top: 20px;
+            width: 50%;
+            height: 75%;
+        }
+        .top>.centre>h1 {
+            text-align: center;
+            font-size: 100px;
+            margin: 0;
+        }
+        .top>.centre>.text {
+            border: 12px double black;
+            background-color: #fff;
+            width: 700px;
+            height: 300px;
+            margin-left: 110px;
+        }
+        .top>.centre>.text>.text-other {
+            text-align: center;
+            width: 500px;
+            margin: 70px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="left">
+            <ol>
+                <li>HOME</li>
+                <li>LIFESTYLE</li>
+                <li>GALLERY</li>
+                <li>TRAVEL</li>
+            </ol>
+            <div class="picture">
+                <img src="./img/img3.jpg" alt="photo">
+                <div class="text">
+                    <h3>Lorem</h3>
+                </div>
+            </div>
+        </div>
+        <div class="centre">
+            <h1>gema</h1>
+            <div class="text">
+                <div class="text-other">
+                    <h3>LOVE YOU HUMBLE ANIMALS</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur dolorum ducimus veritatis, natus ut, dolores beatae nulla impedit fuga quasi inventore dolorem sint labore accusantium magni repudiandae illo voluptatem non?</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+    <div class="down">
+
+    </div>
+</body>
+</html>
