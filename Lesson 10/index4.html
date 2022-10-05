@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Helvetica;
+        }
+        h1, h2, h3, h4, h5 {
+            color: #808080;
+        }
+        h3, h4, h5, h6 {
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .head {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        li {
+            font-size: 130%;
+            padding: 0 3vmin;
+        }
+        .news {
+            border-bottom: 4px solid #808080;
+            padding-left: 7%;
+            padding-right: 7%;
+        }
+        .user {
+            font-style: italic;
+            color: #C8C8C8;
+        }
+        h1 {
+            margin-left: 2%;
+        }
+        ol {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;            
+        }
+         .last_news {
+            width: 20%;
+         }
+        .centre {
+            width: 55%;
+        } 
+        .users {
+            width: 20%;
+        }
+        .city {
+            object-fit: cover;
+            object-position: center;
+            width: 98%;
+            height: 40%;
+        }
+        .social {
+            object-fit: cover;
+            object-position: center;
+            width: 10%;
+            height: 5%;
+            float: right;
+        }
+        .bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: top;
+        }
+        .last_news>div {
+            border-bottom: 2px solid gray;
+            border-top: 2px solid gray;
+        }
+        .users>div {
+            border-bottom: 2px solid gray;
+            border-top: 2px solid gray;
+        }
+        .unnamed {
+            margin-top: 2%;
+        }
+        @media screen and (max-width: 960px)
+        {
+            .users {
+                display: none;
+            }
+            .container {
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+            .head {
+                padding-left: 7%;
+                padding-right: 5%;
+            }
+            .city {
+                width: 98%;
+                height: 30%;
+            }
+            .social {
+                width: 14%;
+                height: 4%;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Media</h1>
+            <ol>
+                <li>Home</li>
+                <li class="news">News</li>
+                <li>Gallery</li>
+                <li>Contact</li>
+            </ol>
+        </div>
+        <div class="bottom">
+            <div class="last_news">
+                <h3>Last News</h3>
+                <div>
+                    <h5>BUSINESS</h5>
+                    <h3>Conseptur eos ipsam possimus</h3>
+                    <h6 class="user">by Modi Cumque</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nobis amet rem saepe. Fugit eveniet praesentium, eaque sequi repudiandae cum iste alias consequatur impedit. Accusantium incidunt vitae cupiditate odit sed?</p>
+                    <h5>2 HOURS AGO</h5>
+                </div>
+                <div>
+                    <h5>ART</h5>
+                    <h3>Lorem architecto commodi illum</h3>
+                    <h6 class="user">by Timus Onihil</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quo consequatur magni illo quas quae minima animi, totam nesciunt neque delectus quod natus. Perspiciatis rem iusto est voluptate velit consequuntur!</p>
+                    <h5>4 HOURS AGO</h5>
+                </div>
+            </div>
+            <div class="centre">
+                <h2>CONSEPTUR EOS IPSAM POSSIMUS</h2>
+                <h5 class="user">by Modi Cumque</h5>
+                <img class="city" src="./classwork_images/urbanization.jpg" alt="city">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste consequuntur quisquam delectus nihil laborum aperiam hic maiores molestias voluptatem cupiditate, quia alias error eum placeat odio voluptates animi odit ipsum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cum voluptatum eum facilis, placeat exercitationem nesciunt optio velit? Aperiam fuga itaque voluptas amet ullam cum, numquam mollitia consectetur debitis tenetur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat recusandae optio eaque beatae perspiciatis quo dolorum nihil ad officia voluptas ipsa minima hic vero illum, cumque ab harum aspernatur.</p>
+                <img class="social" src="./classwork_images/social_icons.png" alt="social">
+            </div>
+            <div class="users">
+                <h3>Osed Accusamus</h3>
+                <div>
+                    <img class="unnamed" src="./classwork_images/unnamed.png" alt="unnamed">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quo consequuntur! Aspernatur ullam fuga omnis vero similique ut tempore quidem praesentium unde, quod et ducimus eligendi quibusdam esse laborum animi!</p>
+                    <h6 class="user">by Modi Cumque</h6>
+                </div>
+                <div>
+                    <img class="unnamed" src="./classwork_images/unnamed.png" alt="unnamed">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus similique maiores, velit reiciendis delectus saepe. Cupiditate iure voluptatibus aperiam sapiente quisquam aliquid architecto adipisci exercitationem reiciendis! Facere vero quas animi.</p>
+                    <h6 class="user">by Timus Onihil</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
