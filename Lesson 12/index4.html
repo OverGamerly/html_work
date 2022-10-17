@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            margin: 0;
+        }
+        .grid {
+            background-color: #0d233d;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            border-radius: 5px;
+            padding: 20px;
+
+            display: grid;
+
+            grid-template-columns: 19.7% 59.7% 19.7%;
+            grid-template-rows: 14.7% 69.7% 14.7%;
+
+            grid-gap: 5px;
+
+        }
+        .item-1 {
+            padding: 5px;
+            background-color: #aa2f26;
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        .item-2 {
+            padding-left: 5px;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            background-color: #b2a429;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .item-3 {
+            padding-left: 5px;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            background-color: #1769aa;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .item-4 {
+            padding-left: 5px;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            background-color: #01796f;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .item-5 {
+            padding: 5px;
+            background-color: #482880;
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+        @media screen and (max-width: 760px) {
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 10% 2fr 1fr;
+                grid-gap: 5px;
+            }
+            .item-1 {
+                padding: 3px;
+                grid-column: 1/4;
+                grid-row: 1/2;
+            }
+            .item-2 {
+                padding: 30px;
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            .item-3 {
+                padding: 30px;
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+            .item-4 {
+                padding: 20px;
+                grid-column: 3/4;
+                grid-row: 2/3;
+            }
+            .item-5 {
+                padding: 3px;
+                grid-column: 1/4;
+                grid-row: 3/4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item-1">HOME     SEARCH</div>
+        <div class="item-2">MENU</div>
+        <div class="item-3">CONTENT</div>
+        <div class="item-4">RIGHT</div>
+        <div class="item-5">FOOTER</div>
+    </div>
+</body>
+</html>
